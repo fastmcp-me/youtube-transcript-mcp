@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3 - 2025-07-15
+
+### Fixes
+- Make index.ts executable
+
 ## 0.1.2 - 2025-07-15
 
 ### Fixes
