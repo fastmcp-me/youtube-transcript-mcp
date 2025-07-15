@@ -1,12 +1,17 @@
 # Changelog
 
-## 0.1.0 - 2025-07-15
+## 0.1.1 - 2025-07-15
 
-### Documentation
-- Add CHANGELOG
+### Fixes
+- Fix failure to execute via bunx
+
+## 0.1.0 - 2025-07-15
 
 ### Features
 - Add get-transcript tool for fetching YouTube transcripts
+
+### Documentation
+- Add CHANGELOG
 
 ### Build
 - Add mise configuration with Bun 1.2.18

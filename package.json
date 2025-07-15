@@ -1,4 +1,25 @@
 {
+	"name": "youtube-transcript-mcp",
+	"version": "0.1.0",
+	"description": "MCP server for fetching YouTube transcripts",
+	"type": "module",
+	"module": "index.ts",
+	"main": "index.ts",
+	"bin": {
+		"youtube-transcript-mcp": "./index.ts"
+	},
+	"files": [
+		"index.ts",
+		"youtube-transcript.ts"
+	],
+	"keywords": [
+		"mcp",
+		"youtube",
+		"transcript",
+		"modelcontextprotocol"
+	],
+	"author": "Michael Hanson",
+	"license": "MIT",
 	"dependencies": {
 		"@modelcontextprotocol/sdk": "^1.15.1"
 	},
@@ -6,9 +27,5 @@
 		"@types/node": "^24.0.14",
 		"typescript": "^5.8.3",
 		"@types/bun": "latest"
-	},
-	"name": "youtube-transcript-mcp",
-	"module": "index.ts",
-	"type": "module",
-	"private": true
+	}
 }

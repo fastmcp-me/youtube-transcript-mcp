@@ -12,7 +12,7 @@ body = """
     ## Unreleased
 {% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
-    ### {{ group | upper_first }}
+    ### {{ group | striptags | trim | upper_first }}
     {% for commit in commits %}\
         - {% if commit.breaking %}[**breaking**] {% endif %}{{ commit.message | upper_first }}
     {% endfor %}\
@@ -25,11 +25,11 @@ filter_unconventional = true
 require_conventional = false
 split_commits = false
 commit_parsers = [
-  { message = "^feat", group = "Features" },
-  { message = "^fix", group = "Bug Fixes" },
-  { message = "^doc", group = "Documentation" },
-  { message = "^perf", group = "Performance" },
+  { message = "^feat", group = "<!-- 1 -->Features" },
+  { message = "^perf", group = "<!-- 2 -->Performance" },
+  { message = "^style", group = "<!-- 3 -->Styling" },
+  { message = "^fix", group = "<!-- 4 -->Fixes" },
+  { message = "^doc", group = "<!-- 5 -->Documentation" },
   { message = "^refactor", group = "Refactor" },
-  { message = "^style", group = "Styling" },
   { message = "^test", group = "Testing" },
 ]
