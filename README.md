@@ -24,7 +24,7 @@ If you prefer node to bun, you can use `npx` instead:
   "mcpServers": {
     "youtube-transcript": {
       "command": "npx",
-      "args": ["youtube-transcript-mcp"]
+      "args": ["-y", "youtube-transcript-mcp"]
     }
   }
 }
