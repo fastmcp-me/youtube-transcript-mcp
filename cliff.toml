@@ -25,6 +25,7 @@ filter_unconventional = true
 require_conventional = false
 split_commits = false
 commit_parsers = [
+  { message = "^.*\\(ignore\\):", skip = true },
   { message = "^feat", group = "<!-- 1 -->Features" },
   { message = "^perf", group = "<!-- 2 -->Performance" },
   { message = "^style", group = "<!-- 3 -->Styling" },
