@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.5 - 2025-07-15
+
+### Fixes
+- Output to dist/ and target node
+
+### Documentation
+- Skip npm version commits in the changelog
+- Fix a missing argument in the README
+
 ## 0.1.4 - 2025-07-15
 
 ### Documentation
