@@ -28,4 +28,14 @@ If you prefer node to bun, you can use `npx` instead:
     }
   }
 }
+```
 
+## To use
+
+Just ask your LLM about a YouTube video:
+
+> Summarize this video: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+> What are the three key points of this video? https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+> What are some counterpoints to this argument here? https://www.youtube.com/watch?v=dQw4w9WgXcQ
