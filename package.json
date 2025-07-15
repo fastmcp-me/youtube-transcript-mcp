@@ -3,15 +3,15 @@
 	"version": "0.1.4",
 	"description": "MCP server for fetching YouTube transcripts",
 	"type": "module",
-	"module": "index.ts",
-	"main": "index.ts",
+	"main": "dist/index.js",
 	"bin": {
-		"youtube-transcript-mcp": "index.ts"
+		"youtube-transcript-mcp": "dist/index.js"
 	},
-	"files": [
-		"index.ts",
-		"youtube-transcript.ts"
-	],
+	"files": ["dist"],
+	"scripts": {
+		"build": "bun build index.ts --outdir dist --target node",
+		"prepublishOnly": "bun run build"
+	},
 	"keywords": [
 		"mcp",
 		"youtube",
