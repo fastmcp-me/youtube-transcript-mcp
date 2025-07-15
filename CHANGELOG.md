@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.4 - 2025-07-15
+
+### Documentation
+- Adjust changelog format
+- Add more details to the README
+- Add a license
+
 ## 0.1.3 - 2025-07-15
 
 ### Fixes
