@@ -11,7 +11,7 @@ Add this to your LLM app's MCP settings:
   "mcpServers": {
     "youtube-transcript": {
       "command": "bunx",
-      "args": ["-y", "youtube-transcript-mcp"]
+      "args": ["--bun", "-y", "youtube-transcript-mcp"]
     }
   }
 }
