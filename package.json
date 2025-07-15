@@ -1,9 +1,14 @@
 {
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.15.1"
-  },
-  "devDependencies": {
-    "@types/node": "^24.0.14",
-    "typescript": "^5.8.3"
-  }
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.15.1"
+	},
+	"devDependencies": {
+		"@types/node": "^24.0.14",
+		"typescript": "^5.8.3",
+		"@types/bun": "latest"
+	},
+	"name": "youtube-transcript-mcp",
+	"module": "index.ts",
+	"type": "module",
+	"private": true
 }
