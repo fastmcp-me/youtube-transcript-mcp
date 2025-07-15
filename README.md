@@ -1,15 +1,31 @@
 # youtube-transcript-mcp
 
-To install dependencies:
+A simple [MCP](https://modelcontextprotocol.io/) server that lets LLMs easily get the transcript of YouTube videos.
 
-```bash
-bun install
+## To install
+
+Add this to your LLM app's MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "youtube-transcript": {
+      "command": "bunx",
+      "args": ["-y", "youtube-transcript-mcp"]
+    }
+  }
+}
 ```
 
-To run:
+If you prefer node to bun, you can use `npx` instead:
 
-```bash
-bun run index.ts
-```
+```json
+{
+  "mcpServers": {
+    "youtube-transcript": {
+      "command": "npx",
+      "args": ["youtube-transcript-mcp"]
+    }
+  }
+}
 
-This project was created using `bun init` in bun v1.2.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
